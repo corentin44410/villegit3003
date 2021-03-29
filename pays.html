@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <style>
+        html {
+            /* 62.5% of 16px = 10px */
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            font-size: 2.4rem;
+        }
+
+
+        .list {
+            list-style: none;
+            padding-left: 0;
+            color: #1b0760;
+            ;
+        }
+
+        .list--inline .list__item {
+            display: inline-block;
+            margin-right: 2rem;
+        }
+
+        .list--tick {
+            list-style-image: url(https://drive.google.com/uc?export=view&id=1NKsi4RzMSKqH7u6mSCl45jzQjUkGhXRy);
+            padding-left: 3rem;
+        }
+
+        .list--tick .list__item {
+            padding-left: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .list--tick .list__item {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list list--tick">
+        <li class="list__item">France</li>
+        <li class="list__item">Allemagne</li>
+        <li class="list__item">Angleterre</li>
+    </ul>
+</body>
+
+</html>
